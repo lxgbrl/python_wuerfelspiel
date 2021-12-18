@@ -31,6 +31,6 @@ while(SpielWiederholen == 0):
                 Kondition = 1 #Die Wiederholungs Kondition wird auf 1 gesetzt, die 2. Schleife(while) wird nicht wiederholt.
                 Beenden = input("Willst du das Spiel nochmal spielen? (J)a oder (N)ein ").lower() #Eingabe wird in Kleinbuchstaben gewandelt
                 #BeendenInt = int(Beenden)
+                print("\033c", end="")#Der Console wird geleert!
                 if(Beenden == "n"):
                     SpielWiederholen = 1 #Setze die SpielWiederholen Variable auf 1. Damit wird die 1. Schleife(while) unterbrochen
-            
